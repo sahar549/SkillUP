@@ -19,7 +19,7 @@
           "type": "varchar",
           "primaryKey": false,
           "notNull": true
-        },
+                },
         "chapterId": {
           "name": "chapterId",
           "type": "varchar",

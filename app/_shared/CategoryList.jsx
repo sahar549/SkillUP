@@ -1,20 +1,28 @@
 export default [
     {
         id:1,
-        name:'programming',
-        icon:'',
+        name:'ENGLISH',
+        icon:'public/eng.png',
         prompt:''
     },
     {
         id:2,
-        name:'Health',
-        icon:'',
-        promp:''
+        name:'FRENSH',
+        icon:'public/french.png',
+        prompt:''
     },
+    
+
     {
         id:3,
+        name:'GERMAN',
+        icon:'public/german.png',
+        promp:''
+    },
+    /*{
+        id:4,
         name:'creative',
         icon:'',
         promp:''
-    },
+    },*/
 ]

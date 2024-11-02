@@ -59,7 +59,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="https://twitter.com/mrpankajpandey_"
+            href="https://twitter.com/Sahartorai_"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="https://github.com/mrpankajpandey"
+            href="https://github.com/sahar549"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -95,7 +95,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="https://linkedin.com/in/mrpankajpandey"
+            href="https://www.linkedin.com/in/sahar-torai-81791a216/"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 text-2xl transition hover:opacity-75 dark:text-gray-200"

@@ -18,8 +18,7 @@ const TopicDescription = () => {
        */}
       <div className="mt-5">
         <label>
-          💡 Write a topic for which you want to generate a course (e.g., Python
-          Course, Yoga, etc.)
+          💡 Write a topic for which you want to generate a course 
         </label>
         <Input
           className="h-14 text-xl"

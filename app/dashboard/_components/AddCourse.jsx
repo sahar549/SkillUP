@@ -10,8 +10,8 @@ const Addcourse = () => {
     const{userCourseList, setUserCourseList} = useContext(UserCourseListContext)
     
     console.log(userCourseList?.length);
-  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'mr.pankajpandey0038@gmail.com';
-  const hasCourseLimit = userCourseList?.length >= 2;
+  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'toriisahar@gmail.com';
+  const hasCourseLimit = userCourseList?.length >= 10000;
   const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard/upgrade';
     
   return (
@@ -22,7 +22,7 @@ const Addcourse = () => {
         </div>
 
         <Link href={destination}>
-        <Button variant="startButton">+ Create AI Course</Button>
+        <Button variant="startButton">+ Create course</Button>
         </Link>
         
     </div>

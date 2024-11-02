@@ -37,7 +37,7 @@ const Header = () => {
       icon: <HiOutlineHome />,
       path: "/dashboard",
     },
-    {
+   /* {
       id: 2,
       name: "Explore",
       icon: <HiOutlineSquare3Stack3D />,
@@ -58,7 +58,7 @@ const Header = () => {
             path: "/dashboard/admin-users",
           },
         ]
-      : []),
+      : []),*/
 
     {
       id: 4,
@@ -73,7 +73,7 @@ const Header = () => {
       <div className="flex items-center gap-2">
            <Link className="flex items-center gap-2 cursor-pointer" href={'/'}>
         <Image src={"/logo.png"} width={44} height={44} />{" "}
-        <span className="font-bold text-xl">AI Course Generator</span>
+        <span className="font-bold text-xl">SkillUP      </span>
            </Link>
 
       </div>

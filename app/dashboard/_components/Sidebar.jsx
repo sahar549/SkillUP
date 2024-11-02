@@ -36,7 +36,7 @@ const Sidebar = () => {
       icon: <HiOutlineHome />,
       path: "/dashboard",
     },
-    {
+   /* {
       id: 2,
       name: "Explore",
       icon: <HiOutlineSquare3Stack3D />,
@@ -57,7 +57,7 @@ const Sidebar = () => {
             path: "/dashboard/admin-users",
           },
         ]
-      : []),
+      : []),*/
 
     {
       id: 4,
@@ -72,7 +72,7 @@ const Sidebar = () => {
   // Define the email of the admin user
 
   // Set max courses for regular users
-  const maxCourses = 2;
+  const maxCourses = 100;
   const courseCount = userCourseList?.length || 0;
 
   // Calculate progress
