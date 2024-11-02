@@ -3,6 +3,10 @@ import { NextResponse } from 'next/server';
 const API_KEY = process.env.CLERK_SECRET_KEY;
 
 export async function GET() {
+  if (!API_KEY) {
+    return NextResponse.json({ message: "API Key is missing." }, { status: 500 });
+  }
+
   try {
     const response = await fetch("https://api.clerk.dev/v1/users", {
       method: "GET",
