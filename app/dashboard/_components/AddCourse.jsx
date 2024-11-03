@@ -11,14 +11,14 @@ const Addcourse = () => {
     
     console.log(userCourseList?.length);
   const isAdmin = user?.primaryEmailAddress?.emailAddress == 'toriisahar@gmail.com';
-  const hasCourseLimit = userCourseList?.length >= 10000;
+  const hasCourseLimit = userCourseList?.length >= 100;
   const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard/upgrade';
     
   return (
     <div  className='flex justify-between items-center'>
         <div>
             <h2 className='text-xl'>Hello, <span className='font-bold'> {user?.fullName} </span> </h2>
-            <p className='text-sm text-gray-500'>Create new course with Ai, Share with friends and Earn form it.</p>
+            <p className='text-sm text-gray-500'>Create new Language course with Ai.</p>
         </div>
 
         <Link href={destination}>

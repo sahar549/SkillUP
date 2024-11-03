@@ -9,7 +9,71 @@ import Link from "next/link";
 import { HiOutlineShare } from "react-icons/hi";
 
 const CourseCard = ({ course, refreshData, displayUser = false }) => {
-  const handleOnDelete = async () => {
+
+  return (
+    <div >
+    </div>
+  );
+};
+
+export default CourseCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  const handleOnDelete = async () => {
     const resp = await db
       .delete(CourseList)
       .where(eq(CourseList.id, course?.id))
@@ -18,9 +82,8 @@ const CourseCard = ({ course, refreshData, displayUser = false }) => {
     if (resp) {
       refreshData();
     }
-  };
-  return (
-    <div className="shadow-sm rounded-md border  cursor-pointer hover:border-primary">
+  };*/
+/*className="shadow-sm rounded-md border  cursor-pointer hover:border-primary">
       <Link href={"/course/" + course?.courseId}>
         <Image
           src={course?.courseBanner}
@@ -37,7 +100,7 @@ const CourseCard = ({ course, refreshData, displayUser = false }) => {
               <HiMiniEllipsisVertical />
             </DropdownOption>
           )}
-          {/* Share URL Icon */}
+          {/* Share URL Icon *//*}
           {navigator.share && (
             <HiOutlineShare
               onClick={() => {
@@ -79,9 +142,4 @@ const CourseCard = ({ course, refreshData, displayUser = false }) => {
             <h2>{course?.userName}</h2>
           </div>
         )}
-      </div>
-    </div>
-  );
-};
-
-export default CourseCard;
+      </div>*/
