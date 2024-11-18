@@ -12,7 +12,7 @@ const Addcourse = () => {
     console.log(userCourseList?.length);
   const isAdmin = user?.primaryEmailAddress?.emailAddress == 'toriisahar@gmail.com';
   const hasCourseLimit = userCourseList?.length >= 100;
-  const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard/upgrade';
+  const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard';
     
   return (
     <div  className='flex justify-between items-center'>

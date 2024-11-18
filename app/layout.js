@@ -2,25 +2,24 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Head from "next/head";
-import Analytics from "./_components/Analytics";
 const inter = Outfit({ subsets: ["latin"] });
 export const metadata = {
-  title: "AI Course Generator | Create Your Customized Learning Path",
-  description: "Easily generate tailored AI courses with our AI Course Generator tool. Customize your curriculum, explore various topics, and enhance your learning experience.",
-  keywords: "AI courses, course generator, custom learning, artificial intelligence, online learning, educational tool",
-  author: "Pankaj Kumar Pandey", // Your name or organization
+  title: "SkillUP| Create Your Customized Learning Path",
+  description: "Easily generate tailored AI languages courses with our AI Course Generator tool. Customize your curriculum, explore various topics, and enhance your learning experience.",
+  keywords: "AI language  courses, course generator, custom learning, artificial intelligence, online learning, educational tool",
+  author: "Sahar Torai",
   openGraph: {
-    title: "AI Course Generator",
-    description: "Transform your learning experience with our AI Course Generator. Create personalized courses tailored to your needs.",
-    url: "https://ai-course-generator-7ci44xbos-sahars-projects-4092efbc.vercel.app/", // Replace with your actual URL
-    image: "/images/og-image.png", // Path to an Open Graph image
+    title: "SkillUP",
+    description: "Transform your learning experience with SkillUP: our  AI Language  Course Generator. Create personalized courses tailored to your needs.",
+    url: "https://skill-up-nu.vercel.app/", 
+    image: "/images/og-image.png", 
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Course Generator",
-    description: "Generate custom AI courses effortlessly. Start your learning journey today!",
-    image: "/images/twitter-image.png", // Path to a Twitter image
+    title: "SkillUP",
+    description: "Generate custom AI  language courses effortlessly. Start your learning journey today!",
+    image: "/images/twitter-image.png",
   },
 };
 
@@ -58,7 +57,7 @@ export default function RootLayout({ children }) {
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           ></script>
         </Head>
-   <Analytics/>
+   
     <html lang="en">
       <body className={inter.className}>{children}
     

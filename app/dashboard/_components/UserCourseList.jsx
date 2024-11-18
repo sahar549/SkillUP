@@ -18,16 +18,15 @@ const UserCourseList = () => {
   useEffect(()=>{
      user&&getUserCourses();
      const timer = setTimeout(() => {
-      setShowSkeleton(false); // Hide skeleton after 10 seconds
+      setShowSkeleton(false); 
     }, 3000);
 
-    // Cleanup the timer on component unmount
     return () => clearTimeout(timer);
   },[user, pageIndex])
   const getUserCourses = async()=>{
     const result = await db.select().from(CourseList).where(eq(CourseList?.createdBy,user?.primaryEmailAddress?.emailAddress)).limit(7).offset(pageIndex*6);
 
-    // console.log(result);
+  
     setCourseList(result.slice(0,6))
     setUserCourseList(result)
     

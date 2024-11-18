@@ -22,15 +22,13 @@ const {
     topP: 0.95,
     topK: 64,
     maxOutputTokens: 8192,
-    // responseMimeType: "applictaion/json",
     response_mime_type: 'application/json',
   };
   
 
   export  const GenerateCourseLayoutAI = model.startChat({
       generationConfig,
-   // safetySettings: Adjust safety settings
-   // See https://ai.google.dev/gemini-api/docs/safety-settings
+   
    history: [
     {
       role: "user",
@@ -48,14 +46,11 @@ const {
 });
 
   
-    // const result = await chatSession.sendMessage("INSERT_INPUT_HERE");
-    // console.log(result.response.text());
- 
+   
 
     export const GenerateChapterContent_AI = model.startChat({
       generationConfig,
-   // safetySettings: Adjust safety settings
-   // See https://ai.google.dev/gemini-api/docs/safety-settings
+ 
       history: [
         {
           role: "user",

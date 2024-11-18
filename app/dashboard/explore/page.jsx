@@ -28,8 +28,7 @@ const Explore = () => {
       .limit(7)
       .offset(pageIndex * 6);
 
-    // console.log(result);
-    // setCourseList(result);
+  
     setCourseList(result.slice(0, 6));
     setShowSkeleton(false);
   };

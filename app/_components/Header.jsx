@@ -10,19 +10,19 @@ const Header = () => {
   return (
     <>
      <Head>
-        <title>AI Language Course Generator        </title>
-        <meta name="description" content="Generate personalized AI courses with our easy-to-use tool. Explore various topics and create your own curriculum today!" />
+        <title>SkillUP </title>
+        <meta name="description" content="Generate personalized AI  Languages courses with our easy-to-use tool. Explore various topics and create your own curriculum today!" />
         <meta name="keywords" content="AI, Course Generator, Online Learning, Educational Tool, Machine Learning, Deep Learning" />
-        <meta name="author" content="Pankaj Kumar Pandey" />
-        <link rel="canonical" href="https://https://mrpankajpandey-ai-course.vercel.app//" />
-        <meta property="og:title" content="AI Course Generator" />
-        <meta property="og:description" content="Create personalized AI courses tailored to your needs." />
-        <meta property="og:image" content="https://https://mrpankajpandey-ai-course.vercel.app//image.jpg" />
-        <meta property="og:url" content="https://https://mrpankajpandey-ai-course.vercel.app//" />
+        <meta name="author" content="Sahar Torai" />
+        <link rel="canonical" href="https://skill-up-nu.vercel.app/" />
+        <meta property="og:title" content="SkillUP" />
+        <meta property="og:description" content="Create personalized AI languages courses tailored to your needs." />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="https://skill-up-nu.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Course Generator" />
-        <meta name="twitter:description" content="Generate personalized AI courses with our easy-to-use tool." />
-        <meta name="twitter:image" content="https://https://mrpankajpandey-ai-course.vercel.app//image.jpg" />
+        <meta name="twitter:title" content="SkillUP" />
+        <meta name="twitter:description" content="Generate personalized AI  languages courses with our easy-to-use tool." />
+        <meta name="twitter:image" content="" />
       </Head>
     <div className="flex justify-between p-5 shadow-sm items-center">
       <div className="flex items-center gap-2">

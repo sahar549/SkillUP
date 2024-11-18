@@ -39,16 +39,7 @@ const ExploreCourse = () => {
       <p>Explore more courses build with AI by other users</p>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-col-4 gap-5 mt-3'>
 
-        {/* {
-            courseList?.length>0?courseList.map((course, index)=>(
-                <Card course={course} key={index}/>
-            ))
-            :([1,2,3,4,5].map((item,index)=>(
-                <div key={index} className='w-full mt-5 bg-slate-200 animate-pulse rounded-lg h-[250px]'>
-               </div>)
-
-          ))
-        } */}
+        {}
         {showSkeleton ? (
             // Show skeletons while loading (for the first 10 seconds)
             [1, 2, 3, 4, 5].map((item, index) => (

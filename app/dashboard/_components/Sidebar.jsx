@@ -27,7 +27,6 @@ const Sidebar = () => {
     user?.primaryEmailAddress?.emailAddress
   );
   const handleLogout = async () => {
-    await signOut({ redirectTo: '/' }); // Redirect after logout
   };
   const menu = [
     {
@@ -36,28 +35,12 @@ const Sidebar = () => {
       icon: <HiOutlineHome />,
       path: "/dashboard",
     },
-   /* {
+   {
       id: 2,
       name: "Explore",
       icon: <HiOutlineSquare3Stack3D />,
       path: "/dashboard/explore",
     },
-    {
-      id: 3,
-      name: "Upgrade",
-      icon: <HiOutlineShieldCheck />,
-      path: "/dashboard/upgrade",
-    },
-    ...(isAdmin
-      ? [
-          {
-            id: 5,
-            name: "Admin Users",
-            icon: <HiOutlineShieldCheck />,
-            path: "/dashboard/admin-users",
-          },
-        ]
-      : []),*/
 
     {
       id: 4,
@@ -69,19 +52,15 @@ const Sidebar = () => {
   ];
 
 
-  // Define the email of the admin user
-
-  // Set max courses for regular users
   const maxCourses = 100;
   const courseCount = userCourseList?.length || 0;
 
-  // Calculate progress
+ 
   const progress = isAdmin
     ? 100
     : Math.min((courseCount / maxCourses) * 100, 100);
 
-  // Determine if redirect to upgrade is needed
-  const needsUpgrade = !isAdmin && courseCount >= maxCourses;
+  
   return (
     <div className="fixed h-full md:w-64 p-4 shadow-md">
       <Image src={"/logo.png"} width={44} height={44} />
@@ -125,11 +104,7 @@ const Sidebar = () => {
             ? `Courses Created: ${courseCount}`
             : `${courseCount} out of ${maxCourses} courses created`}
         </h2>
-        {!isAdmin && needsUpgrade && (
-          <h2 className="text-xs text-gray-500">
-            Upgrade your plan to unlimted course generate
-          </h2>
-        )}
+       
       </div>
     </div>
   );

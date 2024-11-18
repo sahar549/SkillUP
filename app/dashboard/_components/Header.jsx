@@ -28,7 +28,7 @@ const Header = () => {
     user?.primaryEmailAddress?.emailAddress
   );
   const handleLogout = async () => {
-    await signOut({ redirectTo: '/' }); // Redirect after logout
+    await signOut({ redirectTo: '/' }); 
   };
   const menu = [
     {
@@ -37,13 +37,13 @@ const Header = () => {
       icon: <HiOutlineHome />,
       path: "/dashboard",
     },
-   /* {
+   {
       id: 2,
       name: "Explore",
       icon: <HiOutlineSquare3Stack3D />,
       path: "/dashboard/explore",
     },
-    {
+  /*  {
       id: 3,
       name: "Upgrade",
       icon: <HiOutlineShieldCheck />,

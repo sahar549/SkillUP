@@ -19,10 +19,5 @@ export default [
         icon:'public/german.png',
         promp:''
     },
-    /*{
-        id:4,
-        name:'creative',
-        icon:'',
-        promp:''
-    },*/
+   
 ]
